@@ -35,11 +35,11 @@ const AppNavbar = () => {
                 )}
               <br></br>
               <Nav.Link as={Link} to='/'>
-                Diary
+                Goals
               </Nav.Link>
               <br></br>
               <Nav.Link as={Link} to='/'>
-                Goals
+                Diary
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
