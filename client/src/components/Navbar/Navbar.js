@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Navbar, Nav, Container, Modal, Tab } from 'react-bootstrap';
+import { Navbar, Nav, Container, Modal, Tab, Button } from 'react-bootstrap';
 import SignUpForm from '../SignupForm';
 import LoginForm from '../LoginForm';
 import styles from './Navbar.css';
@@ -26,26 +26,26 @@ const AppNavbar = () => {
               {/* if logged in, show saved books and logout */}
               {Auth.loggedIn() ? (
                 <>
-                  
-                  <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
+
+                  <Nav.Link onClick={Auth.logout} style={{color: 'white', textDecoration: 'none'}}>Logout</Nav.Link>
                 </>
               ) : (
-                  <Nav.Link onClick={() => setShowModal(true)}>Login/ Signup</Nav.Link>
+                  <Nav.Link onClick={() => setShowModal(true)} style={{color: 'white', textDecoration: 'none'}}>Login/ Signup</Nav.Link>
                 )}
               <br></br>
               <br></br>
-              <Nav.Link as={Link} to='/'>
+              <Nav.Link as={Link} to='/' style={{color: 'white', textDecoration: 'none'}}>
                 Goals
               </Nav.Link>
               <br></br>
               <br></br>
-              <Nav.Link as={Link} to='/'>
+              <Nav.Link as={Link} to='/' class="button" style={{ color: 'white', textDecoration: 'none' }}>
                 Diary
               </Nav.Link>
               <br></br>
               <br></br>
-              <Nav.Link as={Link} to='/saved'>
-                    Messages
+              <Nav.Link as={Link} to='/saved' style={{color: 'white', textDecoration: 'none'}}>
+                Messages
                   </Nav.Link>
             </Nav>
           </Navbar.Collapse>
