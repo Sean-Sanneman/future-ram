@@ -31,7 +31,9 @@ function App() {
               <Col xs={1}>
                 <Navbar />
               </Col>
-              <Col xs={11}></Col>
+              <Col xs={11}>
+
+              </Col>
             </Row>
           </div>
         </section>

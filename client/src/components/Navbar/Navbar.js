@@ -27,26 +27,36 @@ const AppNavbar = () => {
               {Auth.loggedIn() ? (
                 <>
 
-                  <Nav.Link onClick={Auth.logout} style={{color: 'white', textDecoration: 'none'}}>Logout</Nav.Link>
+                  <Nav.Link onClick={Auth.logout} className='myBtn btnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>Logout</Nav.Link>
                 </>
               ) : (
-                  <Nav.Link onClick={() => setShowModal(true)} style={{color: 'white', textDecoration: 'none'}}>Login/ Signup</Nav.Link>
+                  <Nav.Link onClick={() => setShowModal(true)} className='myBtn btnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>Login/ Signup</Nav.Link>
                 )}
               <br></br>
               <br></br>
-              <Nav.Link as={Link} to='/' style={{color: 'white', textDecoration: 'none'}}>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <Nav.Link as={Link} to='/' className='myBtn btnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>
                 Goals
               </Nav.Link>
               <br></br>
               <br></br>
-              <Nav.Link as={Link} to='/' class="button" style={{ color: 'white', textDecoration: 'none' }}>
+              <br></br>
+              <br></br>
+              <Nav.Link as={Link} to='/' className='myBtn btnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>
                 Diary
               </Nav.Link>
               <br></br>
               <br></br>
-              <Nav.Link as={Link} to='/saved' style={{color: 'white', textDecoration: 'none'}}>
+              <br></br>
+              <br></br>
+              <Nav.Link as={Link} to='/saved' className='myBtn btnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>
                 Messages
-                  </Nav.Link>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -56,7 +66,8 @@ const AppNavbar = () => {
         size='lg'
         show={showModal}
         onHide={() => setShowModal(false)}
-        aria-labelledby='signup-modal'>
+        aria-labelledby='signup-modal' 
+        centered>
         {/* signup/login component */}
         <Tab.Container defaultActiveKey='login'>
           <Modal.Header closeButton>
