@@ -7,7 +7,6 @@ import './App.css';
 
 import Navbar from './components/Navbar/Navbar';
 import { Container, Row, Col } from 'react-bootstrap';
-import Main from './components/Main';
 
 const client = new ApolloClient({
   request: (operation) => {
@@ -26,15 +25,15 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-      <section class='bacground'>
-        <div>
-          <Row>
-            <Col xs={1}>
-              <Navbar />
-            </Col>
-            <Col xs={11}></Col>
-          </Row>
-        </div>
+        <section class='bacground'>
+          <div>
+            <Row>
+              <Col xs={1}>
+                <Navbar />
+              </Col>
+              <Col xs={11}></Col>
+            </Row>
+          </div>
         </section>
       </Router>
     </ApolloProvider>
