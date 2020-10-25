@@ -42,6 +42,10 @@ function App() {
             <Row>
               <Col xs={1}>
                 <Navbar />
+                
+              </Col>
+              <Container>
+                <Col xs={11} className="col-xs-offset-3">
                 <Switch>
                   <Route exact path='/diary' component={Diary} />
                   <Route exact path='/goals' component={Goals} />
@@ -50,11 +54,6 @@ function App() {
                   <Route exact path='/contact' component={Contact} />
                   <Route render={() => <h1 className='display-2'>Wrong page!</h1>} />
                 </Switch>
-              </Col>
-              <Container>
-                <Col xs={11} className="col-xs-offset-3">
-                  <ZenQuotes />
-                  <Diary />
                 </Col>
               </Container>
             </Row>
