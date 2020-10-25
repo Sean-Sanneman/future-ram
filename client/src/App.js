@@ -6,6 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 import Navbar from './components/Navbar/Navbar';
+import Banner from './components/Banner';
+import ZenQuotes from './pages/ZenQuotes';
 import { Container, Row, Col } from 'react-bootstrap';
 
 const client = new ApolloClient({
@@ -25,14 +27,20 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <section class='bacground'>
+        <section>
           <div>
+            <Row>
+            <Col xs={12}>
+            <Banner />
+            </Col>
+            </Row>
             <Row>
               <Col xs={1}>
                 <Navbar />
               </Col>
-              <Col xs={11}>
 
+              <Col xs={7} className="">
+                <ZenQuotes />
               </Col>
             </Row>
           </div>
@@ -40,6 +48,6 @@ function App() {
       </Router>
     </ApolloProvider>
   );
-}
+};
 
 export default App;

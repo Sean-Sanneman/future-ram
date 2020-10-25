@@ -15,4 +15,15 @@ code {
     monospace;
 }
 
+.main-panel {
+  margin: 200px 200px 200px 200px;
+  background-color: rgba(4, 161, 70, 0.2);
+  color: seashell;
+  border-color: ;
+  border: 20px;
+  box-shadow: 2px 2px 12px 8px rgba(0, 0, 0, 0.6);
+  border-radius: 25px;
+  background-color: ;
+}
+
 

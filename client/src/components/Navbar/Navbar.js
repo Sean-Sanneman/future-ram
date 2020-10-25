@@ -19,7 +19,7 @@ const AppNavbar = () => {
           </Navbar.Brand> */}
           <Navbar.Toggle aria-controls='navbar' />
           <Navbar.Collapse id='navbar'>
-            <Nav className='flex-column'>
+            <Nav className='flex-column justify-content-center'>
               {/* <Nav.Link as={Link} to='/'>
                 Diary
               </Nav.Link> */}
@@ -32,10 +32,6 @@ const AppNavbar = () => {
               ) : (
                   <Nav.Link onClick={() => setShowModal(true)} className='myBtn btnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>Login/ Signup</Nav.Link>
                 )}
-              <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
               <br></br>
               <br></br>
               <br></br>
