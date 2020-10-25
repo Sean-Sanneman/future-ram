@@ -29,11 +29,11 @@ function App() {
       <Router>
         <section>
           <div>
-            
+
             <Row>
-            <Col xs={12}>
-            <Banner />
-            </Col>
+              <Col xs={12}>
+                <Banner />
+              </Col>
             </Row>
             <Row>
               <Col xs={1}>
@@ -41,12 +41,12 @@ function App() {
               </Col>
               <Container>
 
-              <Col xs={7} className="col-xs-offset-3">
-                <ZenQuotes />
-              </Col>
+                <Col xs={10} className="col-xs-offset-3">
+                  <ZenQuotes />
+                </Col>
               </Container>
             </Row>
-            
+
           </div>
         </section>
       </Router>
