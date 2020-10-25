@@ -34,24 +34,28 @@ const AppNavbar = () => {
                 )}
               <br></br>
               <br></br>
-              <br></br>
-              <br></br>
-              <Nav.Link as={Link} to='/' className='myBtn btnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>
+              <Nav.Link as={Link} to='/goals' className='myBtn btnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>
                 Goals
               </Nav.Link>
               <br></br>
               <br></br>
-              <br></br>
-              <br></br>
-              <Nav.Link as={Link} to='/' className='myBtn btnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>
+              <Nav.Link as={Link} to='/diary' className='myBtn btnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>
                 Diary
               </Nav.Link>
               <br></br>
               <br></br>
-              <br></br>
-              <br></br>
-              <Nav.Link as={Link} to='/saved' className='myBtn btnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>
+              <Nav.Link as={Link} to='/messages' className='myBtn btnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>
                 Messages
+              </Nav.Link>
+              <br></br>
+              <br></br>
+              <Nav.Link as={Link} to='/zenquotes' className='myBtn btnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>
+                ZenQuotes
+              </Nav.Link>
+              <br></br>
+              <br></br>
+              <Nav.Link as={Link} to='/contact' className='myBtn btnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>
+                Contact
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

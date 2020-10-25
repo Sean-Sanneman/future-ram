@@ -8,6 +8,10 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Banner from './components/Banner';
 import ZenQuotes from './pages/ZenQuotes';
+import Diary from './pages/Diary';
+import Goals from './pages/Goals';
+import Messages from './pages/Messages';
+import Contact from './pages/Contact';
 import { Container, Row, Col } from 'react-bootstrap';
 
 const client = new ApolloClient({
@@ -38,15 +42,22 @@ function App() {
             <Row>
               <Col xs={1}>
                 <Navbar />
+                <Switch>
+                  <Route exact path='/diary' component={Diary} />
+                  <Route exact path='/goals' component={Goals} />
+                  <Route exact path='/zenquotes' component={ZenQuotes} />
+                  <Route exact path='/messages' component={Messages} />
+                  <Route exact path='/contact' component={Contact} />
+                  <Route render={() => <h1 className='display-2'>Wrong page!</h1>} />
+                </Switch>
               </Col>
               <Container>
-
-                <Col xs={10} className="col-xs-offset-3">
+                <Col xs={11} className="col-xs-offset-3">
                   <ZenQuotes />
+                  <Diary />
                 </Col>
               </Container>
             </Row>
-
           </div>
         </section>
       </Router>

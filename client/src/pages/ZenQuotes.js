@@ -15,15 +15,23 @@ import Auth from '../utils/auth';
 const ZenQuotes = () => {
     return (
         <div className="d-flex justify-content-center">
+        
+                  
+
         <Container fluid className="d-flex">
             <Row className="main-panel">
-            <Col>1 of 1</Col>
-                <h3>So this is where we will drop in the daily zen quotes and other content.</h3>
+            
+            
+                <h2>So this is where we will drop in the daily zen quotes:</h2>
                 <br></br>
-                <h4>This is just a placeholder.</h4>
-                <h3>So this is where we will drop in the daily zen quotes and other content.</h3>
                 <br></br>
-                <h4>This is just a placeholder.</h4>
+                <br></br>
+                <br></br>
+                <h4>Cheesecake rubber cheese rubber cheese. <p></p>Camembert de normandie jarlsberg croque monsieur swiss cow lancashire fondue rubber cheese.
+                     Fondue gouda dolcelatte roquefort fromage frais cheesecake goat hard cheese. 
+                     Rubber cheese manchego cheese on toast lancashire cheeseburger dolcelatte pepper jack when the cheese comes out everybody's happy.
+                     Cow fromage frais cheese strings blue castello cut the cheese who moved my cheese roquefort cottage cheese.</h4>
+                
             </Row>
         </Container>
         </div>
