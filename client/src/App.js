@@ -42,18 +42,17 @@ function App() {
             <Row>
               <Col xs={1}>
                 <Navbar />
-                
+
               </Col>
               <Container>
                 <Col xs={11} className="col-xs-offset-3">
-                <Switch>
-                  <Route exact path='/diary' component={Diary} />
-                  <Route exact path='/goals' component={Goals} />
-                  <Route exact path='/zenquotes' component={ZenQuotes} />
-                  <Route exact path='/messages' component={Messages} />
-                  <Route exact path='/contact' component={Contact} />
-                  <Route render={() => <h1 className='display-2'>Wrong page!</h1>} />
-                </Switch>
+                  <Switch>
+                    <Route exact path='/zenquotes' component={ZenQuotes} />
+                    <Route exact path='/diary' component={Diary} />
+                    <Route exact path='/goals' component={Goals} />
+                    <Route exact path='/messages' component={Messages} />
+                    <Route exact path='/contact' component={Contact} />
+                  </Switch>
                 </Col>
               </Container>
             </Row>
