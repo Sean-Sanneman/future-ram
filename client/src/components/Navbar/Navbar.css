@@ -11,3 +11,8 @@
     margin-left: 35%;
     width: 100%;
 }
+
+.buttons {
+    display: inline-flex;
+    justify-content: center;
+}
