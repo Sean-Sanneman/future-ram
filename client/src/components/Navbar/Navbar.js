@@ -49,7 +49,7 @@ const AppNavbar = () => {
               </Nav.Link>
               <br></br>
               <br></br>
-              <Nav.Link as={Link} to='/zenquotes' className='myBtn btnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>
+              <Nav.Link as={Link} to='/' className='myBtn btnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>
                 ZenQuotes
               </Nav.Link>
               <br></br>
@@ -66,7 +66,7 @@ const AppNavbar = () => {
         size='lg'
         show={showModal}
         onHide={() => setShowModal(false)}
-        aria-labelledby='signup-modal' 
+        aria-labelledby='signup-modal'
         centered>
         {/* signup/login component */}
         <Tab.Container defaultActiveKey='login'>

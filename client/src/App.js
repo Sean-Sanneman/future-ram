@@ -47,7 +47,7 @@ function App() {
               <Container>
                 <Col xs={11} className="col-xs-offset-3">
                   <Switch>
-                    <Route exact path='/zenquotes' component={ZenQuotes} />
+                    <Route exact path='/' component={ZenQuotes} />
                     <Route exact path='/diary' component={Diary} />
                     <Route exact path='/goals' component={Goals} />
                     <Route exact path='/messages' component={Messages} />
