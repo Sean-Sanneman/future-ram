@@ -1,4 +1,7 @@
+
 body {
+  background-image: url('./assets/background-space.png');
+  background-size: cover;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -11,3 +14,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main-panel {
+  margin: 9% 0 0 0; 
+  align-content: center;
+  padding: 10% 10% 10% 10%;
+  background-color: rgba(4, 24, 72, 0.2);
+  color: seashell;
+  border-color: ;
+  border: 20px;
+  box-shadow: 2px 2px 12px 8px rgba(0, 0, 0, 0.6);
+  border-radius: 25px;
+  background-color: ;
+}
+
+
