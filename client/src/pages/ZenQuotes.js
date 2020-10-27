@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Jumbotron, Container, Col, Form, Button, Card, CardColumns, Row } from 'react-bootstrap';
+import getQuotes from "../utils/zenQuote/zenQuoteApi";
 
 // These imports will need to be revised - they are being pulled over from the book search project
 
@@ -13,15 +14,20 @@ import Auth from '../utils/auth';
 
 
 const ZenQuotes = () => {
+
+    useEffect(() =>{
+        getQuotes()
+    },[])
+
     return (
         <div className="d-flex justify-content-center">
         
                   
 
         <Container fluid className="d-flex">
-            <Row className="main-panel">
+            <Row className="main-panel" >
             
-            
+                
                 <h2>So this is where we will drop in the daily zen quotes:</h2>
                 <br></br>
                 <br></br>
