@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Jumbotron, Container, Col, Form, Button, Card, CardColumns, Row, ListGroup, ListGroupItem, ListGroupProps, ListGroupItemProps, Tab, Sonnet } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { Jumbotron, Container, Col, Form, Button, ButtonGroup, Card, CardColumns, Row, ListGroup, ListGroupItem, ListGroupProps, ListGroupItemProps, Tab, Nav } from 'react-bootstrap';
 
 // These imports will need to be revised - they are being pulled over from the book search project
 
@@ -17,6 +18,23 @@ const Goals = () => {
         <div className="d-flex justify-content-center">
         <Container fluid className="d-flex">
             <Row className="main-panel">
+
+                <div className="goalButtons">
+                <Nav.Link className='goalMyBtn goalBtnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>
+                Add Goal
+                </Nav.Link>
+                <Nav.Link className='goalMyBtn goalBtnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>
+                Edit Goal
+                </Nav.Link>
+                <Nav.Link className='goalMyBtn goalBtnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>
+                Delete Goal
+                </Nav.Link>
+                </div>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+           
                 <Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
                 <Row>
                     <Col sm={4}>
@@ -74,7 +92,7 @@ const Goals = () => {
                     </h4>
                         </Tab.Pane>
                         </Tab.Content>
-                    </Col>
+                        </Col>
                 </Row>
                 </Tab.Container>
                 </Row>

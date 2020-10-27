@@ -3,8 +3,9 @@ const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
 
 const { typeDefs, resolvers } = require('./schemas');
-const { authMiddleware } = require('../client/src/utils/auth');
+const { authMiddleware } = require('./utils/auth');
 const db = require('./config/connection');
+const request = require("request");
 
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -20,24 +21,25 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // Serve up static assets
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../client/build')));
-}
+// if (process.env.NODE_ENV === 'production') {
+//   app.use(express.static(path.join(__dirname, '../client/build')));
+// }
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build/index.html'));
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, '../client/build/index.html'));
+// });
 
-app.get('/testapi', (req,res) => {
+app.get('/testapi', async (req,res) => {
   var zenQuoteUrl = "https://zenquotes.io/api/random";
+  console.log("Hi there")
 
-    fetch(zenQuoteUrl).then(function ( response ) {
-        if(response.ok) {
-            response.json().then(function (data) {
-                console.log(data);
-            })
-        }
-    })
+  await request(zenQuoteUrl, function(error, response, body){
+    if (response.ok){
+      return response.json().then((data)=>{
+        console.log(data)
+      })
+    }
+  })
 })
 
 db.once('open', () => {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Jumbotron, Container, Col, Form, Button, Card, CardColumns, Row, ListGroup, ListGroupItem, ListGroupProps, ListGroupItemProps, Tab, Sonnet } from 'react-bootstrap';
+import { Jumbotron, Container, Col, Form, Nav, Button, Card, CardColumns, Row, ListGroup, ListGroupItem, ListGroupProps, ListGroupItemProps, Tab, Sonnet } from 'react-bootstrap';
 
 // These imports will need to be revised - they are being pulled over from the book search project
 
@@ -17,6 +17,23 @@ const Diary = () => {
         <div className="d-flex justify-content-center">
         <Container fluid className="d-flex">
             <Row className="main-panel">
+
+            <div className="goalButtons">
+                <Nav.Link className='goalMyBtn goalBtnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>
+                New Entry
+                </Nav.Link>
+                <Nav.Link className='goalMyBtn goalBtnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>
+                Edit Entry*
+                </Nav.Link>
+                <Nav.Link className='goalMyBtn goalBtnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>
+                Delete Entry**
+                </Nav.Link>
+                </div>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+
                 <Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
                 <Row>
                     <Col sm={4}>
