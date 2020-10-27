@@ -19,28 +19,21 @@ const Goals = () => {
         <Container fluid className="d-flex">
             <Row className="main-panel">
 
-            {/* <div className="justify-content-center buttons">
-            <ButtonGroup aria-label="Basic example">
-                <Button variant="secondary">New</Button>
-                <Button variant="secondary">Edit</Button>
-                <Button variant="secondary">Delete</Button>
-            </ButtonGroup>
-            </div>
-            <br></br>
-            <br></br>
-            <br></br> */}
-
-                <div className="buttons">
-                <Nav.Link className='myBtn btnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>
-                Goals
+                <div className="goalButtons">
+                <Nav.Link className='goalMyBtn goalBtnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>
+                Add Goal
                 </Nav.Link>
-                <Nav.Link className='myBtn btnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>
-                Goals
+                <Nav.Link className='goalMyBtn goalBtnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>
+                Edit Goal
                 </Nav.Link>
-                <Nav.Link className='myBtn btnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>
-                Goals
+                <Nav.Link className='goalMyBtn goalBtnPad text-center' style={{ color: 'black', textDecoration: 'none' }}>
+                Delete Goal
                 </Nav.Link>
                 </div>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
            
                 <Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
                 <Row>

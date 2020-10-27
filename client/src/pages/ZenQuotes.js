@@ -16,13 +16,10 @@ const ZenQuotes = () => {
     return (
         <div className="d-flex justify-content-center">
         
-                  
-
         <Container fluid className="d-flex">
             <Row className="main-panel">
-            
-            
-                <h2>So this is where we will drop in the daily zen quotes:</h2>
+                       
+                <h2>ZenQuotes</h2>
                 <br></br>
                 <br></br>
                 <br></br>
