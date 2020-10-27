@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer';
 import Banner from './components/Banner';
 import ZenQuotes from './pages/ZenQuotes';
 import Diary from './pages/Diary';
@@ -56,6 +57,13 @@ function App() {
                 </Col>
               </Container>
             </Row>
+
+            <Row>
+              <Col xs={12}>
+                <Footer />
+              </Col>
+            </Row>
+
           </div>
         </section>
       </Router>
