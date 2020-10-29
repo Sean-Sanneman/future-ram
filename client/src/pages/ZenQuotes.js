@@ -12,7 +12,21 @@ import styles from '../index.css';
 import Auth from '../utils/auth';
 
 
+
 const ZenQuotes = () => {
+
+    const [quote,setQuote] = useState('');
+    const [loading,setLoading] = useState(true);
+    const [author,setAuthor]= useState('');
+
+    useEffect(()=>{
+        fetch('http://quotes.rest/qod.json?category=inspire')
+        .then(res=> res.json())
+        .then(data=>{
+        console.log(data);
+    })
+    },[])
+
     return (
         <div className="d-flex justify-content-center">
         
