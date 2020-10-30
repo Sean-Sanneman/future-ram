@@ -12,7 +12,26 @@ import styles from '../index.css';
 import Auth from '../utils/auth';
 
 
+
 const ZenQuotes = () => {
+
+    const [quote,setQuote] = useState('');
+    const [loading,setLoading] = useState(true);
+    const [author,setAuthor]= useState('');
+
+    useEffect(()=>{
+        fetch('http://quotes.rest/qod.json?category=inspire')
+        // fetch('https://zenquotes.io/api/random')
+        .then(res=> res.json())
+        .then(data=>{
+        console.log(data);
+
+        setQuote(data.contents.quotes[0].quote);
+        setAuthor(data.contents.quotes[0].author);
+
+    })
+    },[])
+
     return (
         <div className="d-flex justify-content-center">
         
@@ -20,14 +39,18 @@ const ZenQuotes = () => {
             <Row className="main-panel">
                        
                 <h2>ZenQuotes</h2>
+
                 <br></br>
                 <br></br>
                 <br></br>
                 <br></br>
-                <h4>Cheesecake rubber cheese rubber cheese. <p></p>Camembert de normandie jarlsberg croque monsieur swiss cow lancashire fondue rubber cheese.
-                     Fondue gouda dolcelatte roquefort fromage frais cheesecake goat hard cheese. 
-                     Rubber cheese manchego cheese on toast lancashire cheeseburger dolcelatte pepper jack when the cheese comes out everybody's happy.
-                     Cow fromage frais cheese strings blue castello cut the cheese who moved my cheese roquefort cottage cheese.</h4>
+
+                <h1><em>{quote}</em></h1>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <p><h3>- {author}</h3></p>
                 
             </Row>
         </Container>
