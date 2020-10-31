@@ -28,8 +28,8 @@ const ZenQuotes = () => {
         .then(data=>{
         console.log(data);
 
-        setQuote(data.contents.quotes[0].quote);
-        setAuthor(data.contents.quotes[0].author);
+        setQuote(data.contents.array[1].q);
+        setAuthor(data.contents.array[1].a);
 
     })
     },[])
