@@ -20,8 +20,8 @@ const ZenQuotes = () => {
     const [author,setAuthor]= useState('');
 
     useEffect(()=>{
-        fetch('http://quotes.rest/qod.json?category=inspire')
-        // fetch('https://zenquotes.io/api/random')
+        // fetch('https://quotes.rest/qod.json?category=inspire')
+        fetch('https://zenquotes.io/api/random')
         .then(res=> res.json())
         .then(data=>{
         console.log(data);
