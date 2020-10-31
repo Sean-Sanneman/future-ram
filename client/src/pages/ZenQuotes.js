@@ -21,7 +21,9 @@ const ZenQuotes = () => {
 
     useEffect(()=>{
         // fetch('https://quotes.rest/qod.json?category=inspire')
-        fetch('https://zenquotes.io/api/random')
+        const proxyurl = "https://cors-anywhere.herokuapp.com/";
+        const url = 'https://zenquotes.io/api/random';
+        fetch(proxyurl + url)
         .then(res=> res.json())
         .then(data=>{
         console.log(data);
