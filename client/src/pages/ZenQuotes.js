@@ -20,14 +20,16 @@ const ZenQuotes = () => {
     const [author,setAuthor]= useState('');
 
     useEffect(()=>{
-        fetch('http://quotes.rest/qod.json?category=inspire')
-        // fetch('https://zenquotes.io/api/random')
+        // fetch('https://quotes.rest/qod.json?category=inspire')
+        const proxyurl = "https://cors-anywhere.herokuapp.com/";
+        const url = 'https://zenquotes.io/api/random';
+        fetch(proxyurl + url)
         .then(res=> res.json())
         .then(data=>{
         console.log(data);
 
-        setQuote(data.contents.quotes[0].quote);
-        setAuthor(data.contents.quotes[0].author);
+        setQuote(data[0].q);
+        setAuthor(data[0].a);
 
     })
     },[])
