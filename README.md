@@ -21,6 +21,8 @@ Our site is still in beta.
 
 We hope you'll like what you see. More coming soon!
 
+![future-ram-screenshot](https://user-images.githubusercontent.com/64930571/98048158-02b28380-1de2-11eb-81c3-7e237bd3fa00.png)
+
 ## Credits
 
 Sean Sanneman @ https://github.com/Sean-Sanneman, Jason Ahmed @ https://github.com/Jason-Ahmed-123, Victor Angel Paniagua Altamirano @ https://github.com/pv95335, and Jake Denman Fields @ https://github.com/NotJakeF
